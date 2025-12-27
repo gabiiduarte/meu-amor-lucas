@@ -6,10 +6,10 @@ document.getElementById("titulo").innerText =
 
 // Mensagens fofas de cada tesouro
 const mensagens = [
-  "Essa cartinha é pra te lembrar o quanto você é especial pra mim 💌",
-  "Esse ursinho representa o carinho e o conforto que sinto com você 🧸",
-  "Essa rosa é porque meu amor por você floresce todos os dias 🌹",
-  "Lucas… você encontrou todos os tesouros do meu coração! 💖🥹"
+  "Essa cartinha é pra te lembrar o quanto você é especial pra mim, EU TE AMO PRETO 💌",
+  "Esse ursinho representa o carinho obg por tudo que vc faz eu me sinto amada 🧸",
+  "você floresce todos os dias no meu coração 🌹",
+  "EU TE AMO E ESPEPERO QUE ACEITE FAZER PARTE DA MINHA VIDA! 💖🥹"
 ];
 
 let encontrados = 0;
