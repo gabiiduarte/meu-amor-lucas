@@ -1,12 +1,35 @@
-function trocarMensagem() {
-  const mensagens = [
-    "Eu amo seu sorriso 😍",
-    "Você faz meu mundo mais feliz 🌎💖",
-    "Obrigada por existir 🥹",
-    "Te amo mais que tudo ❤️"
-  ];
+const nome = "Lucas"; // Nome dele
 
+// Adiciona o título com o nome dele
+document.getElementById("titulo").innerText =
+  `Oi, meu amor, ${nome} 💕`;
+
+// Mensagens fofas de cada tesouro
+const mensagens = [
+  "Essa cartinha é pra te lembrar o quanto você é especial pra mim 💌",
+  "Esse ursinho representa o carinho e o conforto que sinto com você 🧸",
+  "Essa rosa é porque meu amor por você floresce todos os dias 🌹",
+  "Lucas… você encontrou todos os tesouros do meu coração! 💖🥹"
+];
+
+let encontrados = 0;
+
+// Função que mostra as mensagens ao clicar
+function revelar(indice) {
   const msg = document.getElementById("mensagem");
-  const aleatoria = Math.floor(Math.random() * mensagens.length);
-  msg.innerText = mensagens[aleatoria];
+  msg.style.opacity = 0;
+
+  setTimeout(() => {
+    msg.innerText = mensagens[indice];
+    msg.style.opacity = 1;
+
+    encontrados++;
+
+    // Mensagem final após clicar nos 3 itens
+    if (encontrados === 3) {
+      setTimeout(() => {
+        msg.innerText = mensagens[3];
+      }, 1000);
+    }
+  }, 300);
 }

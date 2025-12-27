@@ -1,11 +1,15 @@
+/* CORPO */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
-/* imagem de fundo */
+/* FOTO DE FUNDO */
 .foto-fundo {
   position: fixed;
   top: 0;
@@ -14,9 +18,10 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: brightness(0.75); /* escurece um pouco pra destacar o card */
 }
 
-/* card */
+/* CARD */
 .card {
   background: rgba(255, 255, 255, 0.85);
   padding: 30px;
@@ -25,14 +30,20 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   max-width: 300px;
   margin: auto;
-  margin-top: 20vh;
 }
 
-
+/* TITULO */
 h1 {
   color: #ff4d6d;
 }
 
+/* MENSAGEM */
+#mensagem {
+  transition: opacity 0.3s ease;
+  margin-top: 15px;
+}
+
+/* BOTÕES */
 button {
   background-color: #ff4d6d;
   color: white;
@@ -40,9 +51,21 @@ button {
   padding: 10px 15px;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 button:hover {
   background-color: #e63950;
+}
+
+/* TESOUROS */
+.tesouros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tesouros button {
+  font-size: 16px;
 }
