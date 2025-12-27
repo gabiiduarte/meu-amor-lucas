@@ -8,8 +8,8 @@ document.getElementById("titulo").innerText =
 const mensagens = [
   "Essa cartinha é pra te lembrar o quanto você é especial pra mim, EU TE AMO PRETO 💌",
   "Esse ursinho representa o carinho obg por tudo que vc faz eu me sinto amada 🧸",
-  "você floresce todos os dias no meu coração 🌹",
-  "EU TE AMO E ESPEPERO QUE ACEITE FAZER PARTE DA MINHA VIDA! 💖🥹"
+  "você floresce todos os dias no meu coração🌹",
+  "EU TE AMO E ESPEPERO QUE ACEITE FAZER PARTE DA MINHA VIDA!💖🥹"
 ];
 
 let encontrados = 0;
