@@ -1,4 +1,4 @@
-/* CORPO */
+/* 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 
-/* FOTO DE FUNDO */
+
 .foto-fundo {
   position: fixed;
   top: 0;
@@ -18,10 +18,10 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.75); /* escurece um pouco pra destacar o card */
+  filter: brightness(0.75); 
 }
 
-/* CARD */
+
 .card {
   background: rgba(255, 255, 255, 0.85);
   padding: 30px;
@@ -32,18 +32,18 @@ body {
   margin: auto;
 }
 
-/* TITULO */
+
 h1 {
   color: #ff4d6d;
 }
 
-/* MENSAGEM */
+
 #mensagem {
   transition: opacity 0.3s ease;
   margin-top: 15px;
 }
 
-/* BOTÕES */
+
 button {
   background-color: #ff4d6d;
   color: white;
@@ -58,7 +58,7 @@ button:hover {
   background-color: #e63950;
 }
 
-/* TESOUROS */
+
 .tesouros {
   display: flex;
   flex-direction: column;
@@ -68,4 +68,74 @@ button:hover {
 
 .tesouros button {
   font-size: 16px;
+}*/
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f0f2f5;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:30px;
+}
+
+.comprovante{
+    width:350px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    overflow:hidden;
+}
+
+.topo{
+    background:#00c853;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.topo h2{
+    margin:0;
+}
+
+.conteudo{
+    padding:20px;
+}
+
+.linha{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    border-bottom:1px solid #ddd;
+    padding-bottom:10px;
+}
+
+.formulario{
+    margin-top:20px;
+    width:350px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#00a844;
 }

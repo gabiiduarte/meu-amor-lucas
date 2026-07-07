@@ -1,35 +1,31 @@
-const nome = "Lucas"; // Nome dele
 
-// Adiciona o título com o nome dele
-document.getElementById("titulo").innerText =
-  `Oi, meu amor, ${nome} 💕`;
 
-// Mensagens fofas de cada tesouro
-const mensagens = [
-  "Essa cartinha é pra te lembrar o quanto você é especial pra mim, EU TE AMO PRETO 💌",
-  "Esse ursinho representa o carinho obg por tudo que vc faz eu me sinto amada 🧸",
-  "você floresce todos os dias no meu coração🌹",
-  "EU TE AMO E ESPEPERO QUE ACEITE FAZER PARTE DA MINHA VIDA!💖🥹"
-];
 
-let encontrados = 0;
 
-// Função que mostra as mensagens ao clicar
-function revelar(indice) {
-  const msg = document.getElementById("mensagem");
-  msg.style.opacity = 0;
 
-  setTimeout(() => {
-    msg.innerText = mensagens[indice];
-    msg.style.opacity = 1;
+function gerar(){
 
-    encontrados++;
+    const nome = document.getElementById("nomeInput").value;
+    const banco = document.getElementById("bancoInput").value;
+    const valor = Number(document.getElementById("valorInput").value);
 
-    // Mensagem final após clicar nos 3 itens
-    if (encontrados === 3) {
-      setTimeout(() => {
-        msg.innerText = mensagens[3];
-      }, 1000);
-    }
-  }, 300);
+    document.getElementById("nome").textContent = nome;
+    document.getElementById("banco").textContent = banco;
+
+    document.getElementById("valor").textContent =
+        valor.toLocaleString("pt-BR",{
+            style:"currency",
+            currency:"BRL"
+        });
+
+    const agora = new Date();
+
+    document.getElementById("data").textContent =
+        agora.toLocaleString("pt-BR");
+
+    const id =
+        "SIM-" +
+        Math.random().toString(36).substring(2,10).toUpperCase();
+
+    document.getElementById("id").textContent = id;
 }

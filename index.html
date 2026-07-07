@@ -6,11 +6,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- FOTO DE FUNDO -->
+<!--
+  FOTO DE FUNDO 
   <img src="EU E MEU AMOR.jpeg" alt="Eu e Lucas" class="foto-fundo">
 
-  <!-- CARD DO JOGO -->
   <div class="card">
     <h1 id="titulo"></h1>
 
@@ -24,6 +23,62 @@
       <button onclick="revelar(2)">🌹 Rosa</button>
     </div>
   </div>
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulação de Comprovante Pix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="comprovante">
+    <div class="topo">
+        <h2>SIMULAÇÃO</h2>
+        <p>Comprovante de Pix</p>
+    </div>
+
+    <div class="conteudo">
+        <div class="linha">
+            <span>Valor</span>
+            <strong id="valor">R$ 0,00</strong>
+        </div>
+
+        <div class="linha">
+            <span>Destinatário</span>
+            <strong id="nome">---</strong>
+        </div>
+
+        <div class="linha">
+            <span>Instituição</span>
+            <strong id="banco">---</strong>
+        </div>
+
+        <div class="linha">
+            <span>Data</span>
+            <strong id="data"></strong>
+        </div>
+
+        <div class="linha">
+            <span>ID da Simulação</span>
+            <strong id="id"></strong>
+        </div>
+    </div>
+</div>
+
+<div class="formulario">
+    <input type="text" id="nomeInput" placeholder="Nome">
+    <input type="text" id="bancoInput" placeholder="Banco">
+    <input type="number" id="valorInput" placeholder="Valor">
+    <button onclick="gerar()">Gerar Simulação</button>
+</div>
+
 
   <script src="script.js"></script>
 </body>
